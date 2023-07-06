@@ -8,4 +8,5 @@ import org.eclipse.jgit.api.errors.TransportException;
 
 public interface GitService {
 	public void cloneRepository(String repoLink, String branch) throws IOException, InvalidRemoteException, TransportException, GitAPIException;
+	public void commitFiles(String commitMessage, String branch) throws IOException;
 }
