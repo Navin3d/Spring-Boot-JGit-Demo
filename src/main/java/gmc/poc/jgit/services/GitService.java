@@ -1,4 +1,4 @@
-package com.rbs.consulconfig.services;
+package gmc.poc.jgit.services;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.rbs.consulconfig;
+package gmc.poc.jgit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.rbs.consulconfig.services.GitService;
+import gmc.poc.jgit.services.GitService;
 
 @SpringBootApplication
 public class ConsulconfigApplication implements CommandLineRunner {
@@ -26,8 +26,8 @@ public class ConsulconfigApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-//		gitService.cloneRepository(gitRepoUrl, "main");		
-		gitService.commitFiles("Test Commit", "main");
+//		gitService.cloneRepository(gitRepoUrl, "main");
+		gitService.commitFiles("Spring Commit 1", "main");
 	}
 
 }
