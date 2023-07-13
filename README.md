@@ -4,6 +4,16 @@ This is an Simple POC on Cloning and Pushing files to Github.
 
 ssh-keygen -t ecdsa -b 521 -C "********@gmail.com" -m pem
 
+# Dependency:
+```
+    <dependency>
+        <groupId>com.jcraft</groupId>
+        <artifactId>jsch</artifactId>
+        <version>0.1.55</version>
+    </dependency>
+```
+
+# Code:
 ```
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
