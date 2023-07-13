@@ -63,3 +63,14 @@ public class GitLabService {
     }
 }
 ```
+
+# Alternate to exec:
+```
+// SSH Channel
+ChannelExec channelssh = (ChannelExec) session.openChannel("exec");
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+channelssh.setOutputStream(baos);
+
+// Execute command
+channelssh.setCommand("ls -al");
+```
